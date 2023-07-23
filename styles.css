@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  padding: 4em 1em;
+}
+body header {
+  text-align: center;
+}
+body header > h1 {
+  color: hsl(300, 43%, 22%);
+  padding: 10px;
+  font-weight: 800;
+}
+body header > p {
+  padding: 10px 0;
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+body .parent-stars {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+body .parent-stars .card-stars {
+  background-color: hsl(300, 17%, 93%);
+  border-radius: 10px;
+  margin-top: 15px;
+  padding: 10px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  font-size: 15px;
+}
+body .parent-stars .card-stars:nth-child(3) {
+  margin-bottom: 50px;
+}
+body .parent-stars .card-stars .stars {
+  padding: 5px;
+}
+body .parent-cards {
+  display: flex;
+  flex-direction: column;
+}
+body .parent-cards .cards {
+  background-color: hsl(300, 43%, 22%);
+  padding: 2em;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+body .parent-cards .cards .name {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+body .parent-cards .cards .name > img {
+  border-radius: 50px;
+  width: 35px;
+  height: 35px;
+}
+body .parent-cards .cards .name > h4 {
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 10px;
+}
+body .parent-cards .cards .name > h4 > span {
+  color: hsl(333, 80%, 67%);
+  font-weight: 400;
+}
+body .parent-cards .cards .paragraph {
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 2em;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 5em 10em;
+  }
+  body #up {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  body #up header {
+    text-align: start;
+  }
+  body #up header h1 {
+    padding-right: 2em;
+    padding-left: 0;
+    font-size: 60px;
+    font-weight: 800;
+    max-width: 500px;
+  }
+  body #up header p {
+    padding-right: 5em;
+    max-width: 550px;
+    font-size: 18px;
+  }
+  body #up .parent-stars {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  body #up .parent-stars .card-stars {
+    width: 500px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+  }
+  body #down {
+    margin-top: -10px;
+  }
+  body .parent-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    align-items: center;
+  }
+  .card-stars:nth-child(1) {
+    margin-right: 120px;
+  }
+  .card-stars:nth-child(2) {
+    margin-right: 60px;
+  }
+  .card-stars:nth-child(3) {
+    margin-right: 0px;
+  }
+  .cards:nth-child(1) {
+    margin-top: 0px;
+  }
+  .cards:nth-child(2) {
+    margin-top: 60px;
+  }
+  .cards:nth-child(3) {
+    margin-top: 120px;
+  }
+}/*# sourceMappingURL=styles.css.map */
